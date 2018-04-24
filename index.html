@@ -1,0 +1,91 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="style.css">
+<script>
+            
+function validation(){
+    var name=document.form1.txt.value;
+    var verifName=document.form1.txt;
+    var space="&nbsp;";
+    var passw=document.form1.ps.value;
+    var nline="<br/>";
+    var verifPassw=document.form1.ps
+               
+        if (name=="")
+        {
+            alert("field can't be empty");
+            verifName.focus(); 
+            return false;
+                   
+        }
+                
+                
+        if(name.length<5)
+        {
+            alert("text must be more than 5");
+            verifName.focus(); 
+            return false;
+               
+        }    
+                
+        if(!isNaN(name))     
+        {
+                    
+            alert("it must be a alphabet")  ;
+            verifName.focus(); 
+            return false;
+
+        }
+                
+                
+        if(passw=="") 
+        {
+            alert( "password can't be null " )  
+            verifPassw.focus();    
+            return false;
+
+        }
+                
+        if(!(passw.length>=5)) 
+        {
+                  
+            alert("password must be more than 6 ")     
+            verifPassw.focus();    
+            return false; 
+        }  
+        else 
+        {
+                 
+            document.write("hello"+space+name); 
+            document.write(nline);
+            document.write("your password is="+space+passw) ;   
+            return true;
+
+        }
+             
+             
+}
+        </script>
+    </head>
+ <body>
+    <div class="main">
+    
+    <div class="name">
+    <center>
+    <form id="form" name="form1" method="post" onsubmit="return validation()">
+    
+    <input type="text" name="txt" placeholder=" Enter your name" class="txt">
+    
+     <input type="text" name="ps" placeholder="Password" class="txt1">
+    
+    <br />
+     <br />
+    <input type="submit"  value="Login" class="tx">
+    </form>
+    </center>     
+    </div>
+        
+    </body>
+</html>
