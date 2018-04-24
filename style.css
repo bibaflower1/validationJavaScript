@@ -1,0 +1,59 @@
+body {
+background :url(http://s1.1zoom.me/big0/10/Porsche_911_Targa_4SBlue_485879.jpg) no-repeat;
+position: cover;
+}
+
+.main{   
+display:grid; 
+align-item:center;
+justify-item:center;
+
+}
+#form{
+margin: 10% auto;
+}
+.txt{    
+background-color:#fff;  
+height:40px;
+border-radius:8px 8px 0px 0px;
+border-top:1px  solid black;
+border-left:1px  solid black;
+border-right:1px  solid black;
+border-bottom:0px solid black;
+
+}
+
+.tx{
+
+border-radius:8px 8px 8px 8px;
+background-color:#336699;  
+border:1px solid black;   
+color:white;
+font-weight:600;
+height:40px;
+width:27.5%;
+text-align:center ;
+margin-top: 10px;
+}
+
+.txt::placeholder{
+  
+padding-left:20px;
+        
+}
+
+.txt1{
+height:40px;
+border-radius:0px 0px 5px 5px;
+border-top:1px  solid black;
+border-left:1px  solid black;
+border-right:1px  solid black;
+border-bottom:1px solid black;
+margin-left:5px;
+    
+}
+
+.txt1::placeholder{
+
+padding-left:20px;   
+}
